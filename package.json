@@ -1,0 +1,15 @@
+{
+  "name": "cpf-generator",
+  "version": "1.0.0",
+  "description": "<a href=\"https://vinicius-rodriguess.github.io/CPF-Generator/\" target=\"_blank\">Click here to test the project!</a>\r <p></p>\r <img src=\"./src/img/gerador de cpf.png\"/>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/style.css -o ./src/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
