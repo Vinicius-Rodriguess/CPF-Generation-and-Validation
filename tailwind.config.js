@@ -6,10 +6,23 @@ module.exports = {
       colors: {
         darkBlue: '#0D47A1',
         lightBlueGreen: '#00BFA5',
-        customWhite: 'rgba(255, 255, 255, 0.6)', 
+        customWhite: 'rgba(255, 255, 255, 0.6)',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.valid': {
+          backgroundColor: "#aeffae",
+          border: "1px solid green",
+        },
+        '.error': {
+          backgroundColor: "#ffd1d1",
+          border: "1px solid rgb(255, 0, 0)",
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
 }
-
